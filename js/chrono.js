@@ -16,9 +16,10 @@ function resetTimer(){
 }
 
 function stopTimer(){
+    console.log('stopping?');
     clearInterval(minutes);
     clearInterval(seconds);
-    clearInterval(miliseconds);
+    clearInterval(milliseconds);
 
     $('#start').css('visibility', 'visible');
     $('#stop').css('visibility', 'hidden');
