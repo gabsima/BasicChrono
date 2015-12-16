@@ -1,0 +1,47 @@
+@font-face {
+    font-family: DataSun;
+    src: url('../font/DataSunFixed.woff');
+}
+
+body{
+    background-color:#4E524E;
+}
+
+.font{
+    font-family: DataSun;
+    color:#20BD25;
+    font-size:200%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.timer{
+    line-height: 200px;
+    font-size:400%;
+}
+
+.left-align{
+    text-align:left;
+}
+.right-align{
+    text-align:right;
+}
+.centered{
+    text-align:center;
+}
+
+.btn{
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 120px;
+    height: 80px;
+    font-family: DataSun;
+}
+
+#start{
+    visibility:visible;
+}
+
+#stop{
+    visibility:hidden;
+}
