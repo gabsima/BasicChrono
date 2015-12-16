@@ -16,7 +16,6 @@ function resetTimer(){
 }
 
 function stopTimer(){
-    console.log('stopping?');
     clearInterval(minutes);
     clearInterval(seconds);
     clearInterval(milliseconds);
