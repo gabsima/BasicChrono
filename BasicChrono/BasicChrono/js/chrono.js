@@ -1,7 +1,5 @@
 ﻿function startTimer() {
 
-    minutes = setInterval(addMinutes, 60 * 1000);
-    seconds = setInterval(addSeconds, 1000);
     milliseconds = setInterval(addMiliseconds, 100);
 
     $('#start').css('visibility', 'hidden');
@@ -16,8 +14,6 @@ function resetTimer() {
 }
 
 function stopTimer() {
-    clearInterval(minutes);
-    clearInterval(seconds);
     clearInterval(milliseconds);
 
     $('#start').css('visibility', 'visible');
@@ -40,6 +36,12 @@ function addTimeUnit(unit, maxValue) {
     var identifier = '#' + unit;
     var numericValue = parseInt($(identifier).text()) + 1;
     if (numericValue == maxValue) {
+        if (unit == 'milliseconds') {
+            addSeconds();
+        }
+        if (unit == 'seconds') {
+            addMinutes();
+        }
         $(identifier).text('00');
     }
     else {
