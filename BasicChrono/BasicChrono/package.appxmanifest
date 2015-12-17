@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="43276gabisima.BasicChrono" Version="1.1.0.4" Publisher="CN=DB67EE12-2411-4D14-A2D3-BA143A7DFBC0" />
+  <mp:PhoneIdentity PhoneProductId="2f190e89-b5b8-4842-9ddf-addd788d4d90" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>BasicChrono</DisplayName>
+    <PublisherDisplayName>gabisima</PublisherDisplayName>
+    <Logo>images\TimerStore.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m3:VisualElements DisplayName="BasicChrono" Square150x150Logo="images\Timer150x150.png" Square44x44Logo="images\Timer44x44.png" Description="BasicChrono" ForegroundText="light" BackgroundColor="transparent">
+        <m3:DefaultTile Wide310x150Logo="images\Timer310x150.png" Square71x71Logo="images\Timer71x71.png">
+        </m3:DefaultTile>
+        <m3:SplashScreen Image="images\TimerSplash.png" />
+      </m3:VisualElements>
+    </Application>
+  </Applications>
+</Package>

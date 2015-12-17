@@ -1,6 +1,6 @@
-@font-face {
+﻿@font-face {
     font-family: DataSun;
-    src: url('../font/DataSunFixed.woff');
+    src: url('font/DataSunFixed.woff');
 }
 
 body{
@@ -16,7 +16,7 @@ body{
 
 .timer{
     line-height: 200px;
-    font-size:400%;
+    font-size:200%;
 }
 
 .left-align{

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BasicChrono</title>
+
+    <!-- WinJS references -->
+    <!-- At runtime, ui-themed.css resolves to ui-themed.light.css or ui-themed.dark.css 
+    based on the user’s theme setting. This is part of the MRT resource loading functionality. -->
+    <link href="/css/ui-themed.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/chrono.css">
+    <script src="js/lib/jquery/jquery-2.1.4.min.js"></script>
+
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+
+    <!-- BasicChrono references -->
+    <script src="/js/chrono.js"></script>
+</head>
+<body class="phone">
+    <div class="container">
+        <div class="row centered font">
+            <p>Basic Chrono</p>
+        </div>
+        <div class="row centered">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 timer font">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span>:</span>
+                <span id="milliseconds">00</span>
+            </div>
+        </div>
+
+        <div class="row" id="outer">
+            <div id="inner">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <button class="btn btn-lg btn-success big-btn" id="start" onclick="startTimer()">start</button>
+                    <button class="btn btn-lg btn-danger big-btn" id="stop" onclick="stopTimer()">stop</button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <button class="btn btn-lg btn-warning big-btn" id="reset" onclick="resetTimer()">reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
